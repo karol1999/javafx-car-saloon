@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ComboBox fx:id="cityBox" layoutX="14.0" layoutY="225.0" onAction="#onCitySelected" prefHeight="25.0" prefWidth="112.0" promptText="Miasto" />
+      <TableView fx:id="carsTable" layoutX="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="501.0">
+        <columns>
+          <TableColumn fx:id="brandColumn" prefWidth="75.0" text="Marka" />
+          <TableColumn fx:id="modelColumn" prefWidth="51.33331298828125" text="Model" />
+            <TableColumn fx:id="priceColumn" prefWidth="48.0" text="Cena" />
+            <TableColumn fx:id="yearColumn" prefWidth="90.66668701171875" text="Rok produkcji" />
+            <TableColumn fx:id="conditionColumn" prefWidth="64.00003051757812" text="Stan" />
+            <TableColumn fx:id="cityColumn" prefWidth="67.3333740234375" text="Miasto" />
+            <TableColumn fx:id="statusColumn" prefWidth="99.3333740234375" text="Dostepnosc" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="showroomBox" layoutX="138.0" layoutY="225.0" onAction="#onSalonSelected" prefHeight="25.0" prefWidth="105.0" promptText="Salon" />
+      <TextField fx:id="searchField" layoutX="260.0" layoutY="225.0" promptText="Wpisz nazwę auta" />
+      <Button fx:id="search" alignment="TOP_CENTER" layoutX="427.0" layoutY="225.0" mnemonicParsing="false" onAction="#searchButton" text="Szukaj" />
+      <Button alignment="TOP_CENTER" layoutX="504.0" layoutY="225.0" mnemonicParsing="false" onAction="#buyButton" prefHeight="25.0" prefWidth="85.0" text="Kup" />
+      <Button alignment="TOP_CENTER" layoutX="612.0" layoutY="225.0" mnemonicParsing="false" onAction="#reservationButton" text="Zerezerwuj" />
+      <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/car_salon_image.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

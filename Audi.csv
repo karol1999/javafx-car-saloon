@@ -1,0 +1,4 @@
+brand,model,price,yearOfProduction,mileage,engineCapacity,city
+Audi;A5;150000.0;2020;0.0;2000.0;1;Warszawa
+Audi;A7;320000.0;2020;0.0;3000.0;1;Kraków
+Audi;Q5;230000.0;2020;0.0;2500.0;1;Warszawa
